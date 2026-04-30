@@ -44,8 +44,8 @@ if user_utterance:
         st.metric("총 토큰 / 고유 타입", f"{len(tokens)} / {len(types)}")
 
     st.subheader("상세 분석 결과")
-    st.write("**추출된 내용 형태소 (Tokens):**")
+    st.write("**내용 형태소 (Tokens):**")
     st.info(", ".join(tokens))
     
-    st.write("**고유한 형태소 (Types):**")
+    st.write("**유형수 (Types):**")
     st.success(", ".join(types))
